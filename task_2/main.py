@@ -59,4 +59,4 @@ with open(output_tokens_path, 'w', encoding='utf-8') as tokens_file:
 # Запись лемм и соответствующих токенов
 with open(output_lemmas_path, 'w', encoding='utf-8') as lemmas_file:
     for lemma, tokens in sorted(all_lemmas.items()):
-        lemmas_file.write(f"{lemma}: {' '.join(sorted(tokens))}\n")
+        lemmas_file.write(f"{lemma} {' '.join(sorted(tokens))}\n")
