@@ -2,3 +2,6 @@ requests
 bs4
 pymorphy2
 nltk
+scipy
+numpy
+flask
