@@ -66,7 +66,7 @@ def perform_search(query, links, lemmas, matrix, morph_analyzer):
         if similarity > 0:
             scores[links[str(idx)]] = similarity  # Сохраняем сходство, если оно больше 0
     # Возвращаем отсортированный список результатов
-    return sorted(scores.items(), key=lambda x: x[1], reverse=True)
+    return sorted(scores.items(), key=lambda x: x[1], reverse=True)[:10]
 
 
 # Функция поиска
